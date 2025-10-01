@@ -1,20 +1,19 @@
-def GenreArtistDurationinseconds (Artist, Genre, DurationInSeconds):
-      Artist = "Lauv"
-      Genre = "Electropop"
-      DurationInSeconds = 328
-      return Artist
-      return Genre
-      return DurationInSeconds
+# --- First Program ---
+def GenreArtistDurationinseconds (Genre, Artist, DurationInSeconds):
+      Output = {
+        "Artist": "Lauv",
+        "Genre": "Electropop",
+        "DurationInSeconds": 328
+      }
+      return Output
+first_program = GenreArtistDurationinseconds(Genre, Artist, DurationInSeconds)      
 
-Artist = "Lauv"
-Genre = "Electropop"
-DurationInSeconds = 328
+print(f"Artist: {first_program['Artist']}")
+print(f"Genre: {first_program['Genre']}")
+print(f"DurationInSeconds: {first_program['DurationInSeconds']}")
 
-print(Artist)
-print(Genre)
-print(DurationInSeconds)
 
-# Including Boolean Method
+# --- Including Boolean Method ---
 
 Artist = {
     "Troy": False,
@@ -40,6 +39,7 @@ def print_true_values(category_name, category_dict):
             print(f"  - {item}")
     print()  # blank line for readability 
 
+print("=== Result from Boolean Method ===")
 print_true_values("Artist", Artist)
 print_true_values("Genre", Genre)
 print_true_values("DurationInSeconds", DurationInSeconds)
