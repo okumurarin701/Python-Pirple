@@ -1,0 +1,45 @@
+def GenreArtistDurationinseconds (Artist, Genre, DurationInSeconds):
+      Artist = "Lauv"
+      Genre = "Electropop"
+      DurationInSeconds = 328
+      return Artist
+      return Genre
+      return DurationInSeconds
+
+Artist = "Lauv"
+Genre = "Electropop"
+DurationInSeconds = 328
+
+print(Artist)
+print(Genre)
+print(DurationInSeconds)
+
+# Including Boolean Method
+
+Artist = {
+    "Troy": False,
+    "JP": False,
+    "Lauv": True
+}
+Genre = {
+    "Dance": False,
+    "Electropop": True,
+    "Pop": False
+}
+DurationInSeconds = {
+    126: False,
+    328: True,
+    294: False
+}
+
+def print_true_values(category_name, category_dict):
+    # Correct indentation here
+    print(f"{category_name}:")
+    for item, is_true in category_dict.items():
+        if is_true:
+            print(f"  - {item}")
+    print()  # blank line for readability 
+
+print_true_values("Artist", Artist)
+print_true_values("Genre", Genre)
+print_true_values("DurationInSeconds", DurationInSeconds)
